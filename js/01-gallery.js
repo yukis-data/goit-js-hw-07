@@ -10,6 +10,7 @@ galleryContainer.insertAdjacentHTML('afterbegin', galleryMarkup);
 
 galleryContainer.addEventListener('click', clickOnGalleryContainer);
 
+
 function createGalleryCardsMarkup(galleryItems) {
   return galleryItems
     .map(({ preview, original, description }) => {
@@ -30,6 +31,7 @@ function createGalleryCardsMarkup(galleryItems) {
 
 let instance = {};
 
+
 function clickOnGalleryContainer(e) {
   e.preventDefault();
   window.addEventListener('keydown', closeOnModalEscape);
@@ -42,6 +44,7 @@ function clickOnGalleryContainer(e) {
 
   instance.show();
 }
+
 
 function closeOnModalEscape(e) {
   if (e.code === 'Escape') {

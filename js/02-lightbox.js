@@ -26,4 +26,5 @@ const ligthbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
+
 ligthbox.on('show.simplelightbox', () => {});
